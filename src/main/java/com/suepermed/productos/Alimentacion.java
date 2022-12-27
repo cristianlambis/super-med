@@ -1,0 +1,21 @@
+package com.suepermed.productos;
+
+import com.suepermed.IProducto;
+
+public class  Alimentacion extends Producto {
+
+    public Alimentacion(String referencia, int peso, int volumen) {
+        super(referencia, peso, volumen);
+    }
+
+    @Override
+    public String getCategoria() {
+        return "alimentacion";
+    }
+
+    @Override
+    public boolean esCompatible(IProducto p) {
+        // TODO Auto-generated method stub
+        return false;
+    }
+}
