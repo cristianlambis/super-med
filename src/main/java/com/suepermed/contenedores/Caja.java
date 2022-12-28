@@ -1,5 +1,7 @@
 package com.suepermed.contenedores;
 
+import com.suepermed.enums.TipoContenedor;
+
 public class Caja extends Contenedor {
     private int ancho;
     private int largo;
@@ -11,8 +13,8 @@ public class Caja extends Contenedor {
     }
 
     @Override
-    public String getTipo() {
-        return "caja";
+    public TipoContenedor getTipo() {
+        return TipoContenedor.CAJA;
     }
 
     @Override

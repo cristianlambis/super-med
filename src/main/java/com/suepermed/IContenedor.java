@@ -1,5 +1,7 @@
 package com.suepermed;
 
+import com.suepermed.enums.TipoContenedor;
+
 import java.util.Set;
 
 public interface IContenedor {
@@ -16,7 +18,7 @@ public interface IContenedor {
 
     Set<IProducto> getProductos();
 
-    String getTipo();
+    TipoContenedor getTipo();
 
     boolean meter(IProducto producto);
 

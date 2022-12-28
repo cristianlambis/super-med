@@ -1,6 +1,7 @@
 package com.suepermed.productos;
 
 import com.suepermed.IProducto;
+import com.suepermed.enums.Categoria;
 
 public class Mascotas extends Producto{
     public Mascotas(String referencia, int peso, int volumen) {
@@ -8,8 +9,8 @@ public class Mascotas extends Producto{
     }
 
     @Override
-    public String getCategoria() {
-        return "Mascotas";
+    public Categoria getCategoria() {
+        return Categoria.MASCOTAS;
     }
 
     @Override

@@ -1,5 +1,7 @@
 package com.suepermed.contenedores;
 
+import com.suepermed.enums.TipoContenedor;
+
 public class Bolsa extends Contenedor {
 
     private int ancho;
@@ -10,8 +12,8 @@ public class Bolsa extends Contenedor {
     }
 
     @Override
-    public String getTipo() {
-        return "bolsa";
+    public TipoContenedor getTipo() {
+        return TipoContenedor.BOLSA;
     }
 
     @Override

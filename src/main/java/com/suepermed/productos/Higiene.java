@@ -1,6 +1,7 @@
 package com.suepermed.productos;
 
 import com.suepermed.IProducto;
+import com.suepermed.enums.Categoria;
 
 public class Higiene extends Producto{
     public Higiene(String referencia, int peso, int volumen) {
@@ -8,8 +9,8 @@ public class Higiene extends Producto{
     }
 
     @Override
-    public String getCategoria() {
-        return "Higiene";
+    public Categoria getCategoria() {
+        return Categoria.HIGIENE;
     }
 
     @Override
